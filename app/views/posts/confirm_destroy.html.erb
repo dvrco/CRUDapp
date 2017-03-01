@@ -1,0 +1,10 @@
+<h3><%= @post.title %></h3>
+<%= simple_format @post.body %>
+
+<p>Czy na pewno chesz usunąć</p>
+	<p>
+		<%= link_to "TAK", post_path(@post), method: :delete, class: "btn btn-danger" %>
+		<%= link_to "NIE", post_path, class: "btn btn-default" %>
+	</p>
+
+
